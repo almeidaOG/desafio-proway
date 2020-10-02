@@ -1,0 +1,164 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Tabela de registro de pontua'#231#245'es'
+  ClientHeight = 454
+  ClientWidth = 616
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label2: TLabel
+    Left = 89
+    Top = 297
+    Width = 68
+    Height = 13
+    Caption = 'Insira o Placar'
+  end
+  object Label3: TLabel
+    Left = 327
+    Top = 353
+    Width = 52
+    Height = 26
+    Caption = 'M'#237'nimo da temporada'
+    WordWrap = True
+  end
+  object Label4: TLabel
+    Left = 327
+    Top = 303
+    Width = 52
+    Height = 26
+    Caption = 'Max. da temporada'
+    WordWrap = True
+  end
+  object Label6: TLabel
+    Left = 471
+    Top = 303
+    Width = 55
+    Height = 42
+    Caption = 'Quantidade de quebra de recorde'
+    WordWrap = True
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 297
+    Width = 23
+    Height = 13
+    Caption = 'Jogo'
+  end
+  object edtplacar: TEdit
+    Left = 89
+    Top = 316
+    Width = 75
+    Height = 21
+    TabOrder = 0
+  end
+  object edtMinTemp: TEdit
+    Left = 385
+    Top = 358
+    Width = 66
+    Height = 21
+    Enabled = False
+    TabOrder = 1
+    Text = 'N/a'
+  end
+  object edtMaxTemp: TEdit
+    Left = 385
+    Top = 308
+    Width = 66
+    Height = 21
+    Enabled = False
+    TabOrder = 2
+    Text = 'N/a'
+  end
+  object edtQtdQuebraRec: TEdit
+    Left = 532
+    Top = 308
+    Width = 66
+    Height = 21
+    Enabled = False
+    TabOrder = 3
+    Text = 'N/a'
+  end
+  object btnCalcular: TButton
+    Left = 89
+    Top = 356
+    Width = 75
+    Height = 25
+    Caption = 'Calcular'
+    TabOrder = 4
+    OnClick = btnCalcularClick
+  end
+  object LvResultado: TListView
+    Left = 8
+    Top = 37
+    Width = 595
+    Height = 230
+    Columns = <
+      item
+        Caption = 'Jogo'
+      end
+      item
+        Caption = 'Placar'
+      end
+      item
+        AutoSize = True
+        Caption = 'Max. da temporada'
+      end
+      item
+        AutoSize = True
+        Caption = 'Minimo da temporada'
+      end
+      item
+        AutoSize = True
+        Caption = 'Quebra recorde max.'
+      end
+      item
+        AutoSize = True
+        Caption = 'Quebra recorde min.'
+      end>
+    GridLines = True
+    SortType = stText
+    TabOrder = 5
+    ViewStyle = vsReport
+  end
+  object edtJogo: TEdit
+    Left = 8
+    Top = 316
+    Width = 33
+    Height = 21
+    Enabled = False
+    TabOrder = 6
+  end
+  object btnNovo: TButton
+    Left = 8
+    Top = 356
+    Width = 75
+    Height = 25
+    Caption = 'Novo'
+    TabOrder = 7
+    OnClick = btnNovoClick
+  end
+  object edtQuebraRecMin: TEdit
+    Left = 454
+    Top = 408
+    Width = 121
+    Height = 21
+    TabOrder = 8
+    Visible = False
+  end
+  object edtQuebraRecMax: TEdit
+    Left = 327
+    Top = 408
+    Width = 121
+    Height = 21
+    TabOrder = 9
+    Visible = False
+  end
+end
