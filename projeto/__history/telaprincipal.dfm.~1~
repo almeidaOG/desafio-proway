@@ -40,8 +40,8 @@ object Form1: TForm1
   object Label6: TLabel
     Left = 471
     Top = 303
-    Width = 56
-    Height = 39
+    Width = 55
+    Height = 42
     Caption = 'Quantidade de quebra de recorde'
     WordWrap = True
   end
@@ -57,8 +57,6 @@ object Form1: TForm1
     Top = 316
     Width = 75
     Height = 21
-    MaxLength = 3
-    NumbersOnly = True
     TabOrder = 0
   end
   object edtMinTemp: TEdit
